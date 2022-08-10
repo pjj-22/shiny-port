@@ -1,0 +1,3 @@
+Card.o: Card.cpp Card.h
+sim.o: sim.cpp Card.h
+Game.o: Game.cpp
