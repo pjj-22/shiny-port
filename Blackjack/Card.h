@@ -12,6 +12,7 @@ class Card {
 
     Card(int, int);
     
+    void printCard();
 };
 
 #endif

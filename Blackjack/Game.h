@@ -7,16 +7,17 @@
 
 class Game {
     private:
-    std::vector<Card> deck;
     std::vector<Card> playerHand;
     std::vector<Card> houseHand;
     std::vector<Card> discardPile;
     public:
+    std::vector<Card> deck;
+
     void createDeck(int);
-    void shuffleDeck(vector<Card>, int);
+    void shuffleDeck();
     void deal();
     void dealerMove();
     void playerMove();
-}
+};
 
 #endif

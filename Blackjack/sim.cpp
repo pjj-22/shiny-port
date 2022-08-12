@@ -1,9 +1,14 @@
 #include <iostream>
 #include <vector>
 #include "Card.h"
+#include "Game.h"
 
 int main() {
-    Card newCard = Card(1, 1); 
-    std::cout << newCard.suit + newCard.value;
+    Game game = Game();
+    game.createDeck(2);
+    for (Card card : game.deck) {
+        card.printCard();
+    }
+
     return 0;
 }
